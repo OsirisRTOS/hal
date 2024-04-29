@@ -1,0 +1,11 @@
+[package]
+name = "hal"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+stm32-l4 = { package = "l4", path = "./stm32/l4", optional = true}
+
+[features]
+stm32l4r5 = [ "stm32-l4", "stm32-l4/r5" ]
+
